@@ -1,0 +1,133 @@
+/* Container for the robot */
+.robot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111; /* Dark background for cyberpunk vibe */
+  }
+  
+  /* Robot body */
+  .robot-body {
+    width: 200px;
+    height: 300px;
+    background-color: #ff6a6a; /* Pastel red color */
+    border: 3px solid #333; /* Dark border for a metallic look */
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 0 10px #0ff; /* Neon-like glow */
+    overflow: hidden; /* Ensures nothing spills out of the body */
+  }
+  
+  /* Neon lines for cyberpunk effect */
+  .neon-line {
+    width: 100%;
+    height: 2px;
+    background-color: #0ff;
+    position: absolute;
+    animation: neon-flicker 2s infinite alternate;
+  }
+  
+  .neon-line:nth-child(1) { top: 25%; }
+  .neon-line:nth-child(2) { top: 50%; }
+  .neon-line:nth-child(3) { top: 75%; }
+  
+  /* Neon flicker animation */
+  @keyframes neon-flicker {
+    0% { opacity: 0.2; }
+    100% { opacity: 1; }
+  }
+  
+  /* Robot head */
+  .robot-head {
+    width: 180px;
+    height: 100px;
+    background-color: #ff6a6a;
+    border: 3px solid #333;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  /* Eyes */
+  .robot-eye {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid #333;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .robot-eye-left {
+    left: 30px;
+    top: 30px;
+  }
+  
+  .robot-eye-right {
+    right: 30px;
+    top: 30px;
+  }
+  
+  /* Fire in the eyes */
+  .robot-eye::before {
+    content: '';
+    width: 10px;
+    height: 20px;
+    background-color: #ff4500; /* Fire color */
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    border-radius: 50%;
+    box-shadow: 0 8px 6px -6px #ff4500; /* Glowing effect */
+  }
+  
+  /* Mouth */
+  .robot-mouth {
+    width: 100px;
+    height: 20px;
+    background-color: #333;
+    position: absolute;
+    bottom: 200px;
+    left: 50px;
+    border-radius: 5px;
+  }
+  
+  /* Arms */
+  .robot-arm {
+    width: 20px;
+    height: 100px;
+    background-color: #ff6a6a;
+    border: 3px solid #333;
+    position: absolute;
+    top: 100px;
+  }
+  
+  .robot-arm-left {
+    left: -20px;
+  }
+  
+  .robot-arm-right {
+    right: -20px;
+  }
+  
+  /* Feet */
+  .robot-feet {
+    width: 20px;
+    height: 80px;
+    background-color: #ff6a6a;
+    border: 3px solid #333;
+    position: absolute;
+    bottom: -80px;
+  }
+  
+  .robot-feet-left {
+    left: 50px;
+  }
+  
+  .robot-feet-right {
+    right: 50px;
+  }
+  
+  
